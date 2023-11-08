@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Handlee&display=swap" rel="stylesheet">
+    
+    <title>Dice Roll Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+      <div class="header">
+        <h1>Dice Roll Game</h1>
+        <p class="instructions"><u>Instructions:</u> Click on the dice to get a number. Player 1 goes first. The player to get the larger number wins.</p>
+      </div>
+
+      <div class="dice1">
+        <p>Player 1</p>
+        <img class="img1" src="./images/dice6.png">
+      </div>
+
+      <div class="dice2">
+        <p>Player 2</p>
+        <img class="img2" src="./images/dice6.png">
+      </div>
+
+      <div>
+        <button class="reset" onClick="window.location.reload();">Reset</button>
+      </div>
+    </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="index.js" charset="utf-8"></script>
+</body>
+</html>

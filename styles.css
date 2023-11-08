@@ -1,0 +1,56 @@
+body {
+    background-color: #363062;
+    text-align: center;
+}
+
+h1 {
+    color: #818FB4;
+    font-family: 'Cookie', cursive;
+    font-size: 6rem;
+    text-shadow: 5px 0 #232931;
+}
+
+img {
+    width: 55%;
+}
+
+p, .reset {
+    color: #F5E8C7;
+    font-family: 'Handlee', cursive;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.header {
+    background-color: #435585;
+    margin: 20px;
+    padding-bottom: 2px;
+}
+
+.instructions, .reset {
+    font-size: 1.3rem;
+}
+
+.dice1, .dice2 {
+    font-size: 2rem;
+    display: inline-block;
+}
+
+.reset {
+    background-color: #435585;
+    border: 1px solid black;
+    padding: 8px 30px;
+    margin: 20px;
+}
+
+.reset:hover {
+    background-color:#818FB4;
+}
+
+.clicked {
+    opacity: 0.5;
+}
