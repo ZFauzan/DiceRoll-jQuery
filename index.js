@@ -4,7 +4,7 @@ var image1Changed = false;
 
 $(".img1").click(function() {
     diceAnimation(".img1");
-    $(".img1").attr("src", "./images/dice" + randomNum1 + ".png");
+    $(".img1").attr("src", "./dice" + randomNum1 + ".png");
     $(".dice1 p").html("Player 1 rolled " + randomNum1);
     image1Changed = true;
 })
@@ -14,7 +14,7 @@ $(".img2").click(function() {
         return; // exits this function. ensures player 1 goes first
     }
     diceAnimation(".img2");
-    $(".img2").attr("src", "./images/dice" + randomNum2 + ".png");
+    $(".img2").attr("src", "./dice" + randomNum2 + ".png");
     $(".dice2 p").html("Player 2 rolled " + randomNum2);
     changeHeading();
 })
@@ -29,17 +29,17 @@ function diceAnimation(selector) {
 function changeHeading() {
     if (randomNum1 > randomNum2) {
         $("h1").text("Player 1 Wins! 🏆");
-        var win = new Audio("sounds/win.mp3");
+        var win = new Audio("./win.mp3");
         win.play(); 
     }
     else if (randomNum1 < randomNum2) {
         $("h1").text("Player 2 Wins! 🏆");
-        win = new Audio("sounds/win.mp3");
+        win = new Audio("./win.mp3");
         win.play(); 
     }
     else {
         $("h1").text("Draw Game");
-        var draw = new Audio("sounds/draw.mp3");
+        var draw = new Audio("./draw.mp3");
         draw.play(); 
     }
     $("h1").css("color","#F5E8C7");
